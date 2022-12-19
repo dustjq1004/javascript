@@ -7,6 +7,6 @@ test("배열에 대해서 알아보자", () =>{
     });
     array01.constructorArr.forEach((value, index)=> {
         console.log(`consructorArr[${index}] : ${value}`);
-        expect(typeof value).toEqual("number");
+        expect(typeof value).toEqual(index < 4 ? "number" : "string");
     });
 });

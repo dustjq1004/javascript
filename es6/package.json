@@ -1,9 +1,19 @@
 {
   "dependencies": {
     "@types/jest": "^29.2.4",
-    "jest": "^29.3.1"
-  }
-  ,"scripts": {
-    "test": "jest"
-  }
+    "jest": "^29.3.1",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "test": "node --test --require ts-node/register 2_test/*",
+    "test02": "jest",
+    "test:watch": "node --watch --require ts-node/register"
+  },
+  "name": "es6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
